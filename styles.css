@@ -1,0 +1,240 @@
+* {
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #f8f0f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 260px;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #d36c8b;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #a94c70;
+}
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-principal {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 60px;
+}
+
+.sobre {
+  text-align: center;
+  padding: 0 30px 50px;
+}
+
+.sobre h2 {
+  text-align: center;
+  color: #d36c8b;
+}
+
+footer {
+  background-color: rgba(240, 177, 212, 0.5);
+  padding: 30px;
+  text-align: center;
+  font-family: cursive;
+  border-top: 2px solid rgba(240, 177, 212, 0.8);
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Botão hamburguer (menu mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #d36c8b;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Estilo base do menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fce8eb;
+    padding: 10px 0;
+    border-top: 1px solid #d36c8b;
+  }
+
+  .nav-menu.ativo {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .img-principal {
+    width: 90%;
+  }
+
+  .destaque {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sobre {
+    padding: 20px;
+  }
+  .doce {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: 280px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.img-doce {
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: serif;
+  color: rgb(46, 23, 0);
+  text-align: center;
+}
+
+.imagem-centro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.imagem-receita {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.receita-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  font-family: serif;
+  color: rgb(46, 23, 0);
+  padding-bottom: 100px;
+}
+
+.ingredientes,
+.preparo {
+  max-width: 400px;
+}
+
+footer {
+  background-color: rgba(255, 127, 80, 0.5);
+  padding: 20px;
+  text-align: center;
+  font-family: cursive;
+  border-top: 2px solid rgba(255, 127, 80, 0.8);
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .imagem-receita {
+    width: 90%;
+  }
+
+  .receita-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .ingredientes,
+  .preparo {
+    width: 90%;
+  }
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .img-doce {
+    width: 70%;
+  }
+}

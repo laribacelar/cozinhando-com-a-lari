@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cozinhando com a Lari</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="img-container">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          alt="Logo Cozinhando com a Lari"
+        />
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <nav class="nav-menu">
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#doces">Doces</a></li>
+          <li><a href="#salgados">Salgados</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="container-principal">
+        <img
+          class="img-principal"
+          src="assets/brigadeirão.png"
+          alt="Brigadeirão"
+        />
+      </section>
+
+      <section class="sobre">
+        <h2>Sobre</h2>
+        <p>
+          Sou a Larissa, apaixonada por cozinhar e compartilhar sabores que
+          aquecem o coração. Aqui você encontra receitas testadas, simples e
+          cheias de carinho.
+        </p>
+      </section>
+
+      <section id="doces" class="doce">
+        <h1 class="h1">Bolo de Cenoura</h1>
+        <div class="imagem-centro">
+          <img
+            src="assets/bolo-cenoura.png"
+            alt="Bolo de Cenoura"
+            class="imagem-receita"
+          />
+        </div>
+        <div class="receita-container">
+          <div class="ingredientes">
+            <h3>Ingredientes:</h3>
+            <ul>
+              <li>2 xícaras de cenoura picada</li>
+              <li>4 ovos</li>
+              <li>1 xícara de óleo</li>
+              <li>2 xícaras de açúcar</li>
+              <li>2 xícaras de farinha de trigo peneirada</li>
+              <li>1 1/2 colher de fermento para bolo</li>
+            </ul>
+          </div>
+          <div class="preparo">
+            <h3>Modo de Preparo:</h3>
+            <ol>
+              <li>
+                Bata no liquidificador a cenoura, os ovos, o óleo e o açúcar por
+                5 minutos.
+              </li>
+              <li>
+                Despeje o conteúdo em uma travessa e misture o trigo e o
+                fermento.
+              </li>
+              <li>
+                Asse em forno médio até dourar ou até o palito sair limpo.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="salgados" class="doce">
+        <h1 class="h1">Challah</h1>
+        <div class="imagem-centro">
+          <img src="assets/challah.jpg" alt="Challah" class="imagem-receita" />
+        </div>
+        <div class="receita-container">
+          <div class="ingredientes">
+            <h3>Ingredientes:</h3>
+            <ul>
+              <li>450ml de água morna</li>
+              <li>1kg de trigo</li>
+              <li>1 ovo</li>
+              <li>20g de fermento biológico seco</li>
+              <li>50g de açúcar</li>
+              <li>10g de sal</li>
+              <li>120ml de óleo</li>
+              <li>1 gema para pincelar</li>
+              <li>Gergelim para decorar</li>
+            </ul>
+          </div>
+          <div class="preparo">
+            <h3>Modo de Preparo:</h3>
+            <ol>
+              <li>Misture a água morna com o fermento.</li>
+              <li>Acrescente o ovo, óleo, açúcar e o sal e misture.</li>
+              <li>
+                Por último, acrescente o trigo e misture, sove até desgrudar das
+                mãos.
+              </li>
+              <li>
+                Deixe descansar por 1 hora, modele em trança e deixe crescer
+                novamente.
+              </li>
+              <li>
+                Pincele com gema, salpique gergelim e asse em forno médio até
+                dourar.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Larissa's Kitchen. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".nav-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+      });
+    </script>
+  </body>
+</html>
